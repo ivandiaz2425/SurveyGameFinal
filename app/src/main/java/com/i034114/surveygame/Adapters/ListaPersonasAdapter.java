@@ -48,18 +48,14 @@ public class ListaPersonasAdapter extends RecyclerView.Adapter<ListaPersonasAdap
         holder.buttonComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, MainActivity.class);
-                intent.putExtra("ide", listaUsuario.get(position).getIde());
-                v.getContext().startActivity(intent);
+
             }
         });
 
         holder.buttonAllComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, Register.class);
-                intent.putExtra("ide", listaUsuario.get(position).getIde());
-                v.getContext().startActivity(intent);
+
             }
         });
 
